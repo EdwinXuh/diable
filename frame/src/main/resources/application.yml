@@ -1,0 +1,27 @@
+dr:
+  name: 残疾报告动态管理系统
+  version: 1.0.0
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 30MB
+  profiles:
+    active: dev
+
+jwt:
+  secret: 5q6L55a+5oql5ZGK5Yqo5JUAasSDSAds*87ASud/A?D(G+KbPeShVmYq3s6v9y$B&E)H@McQfTjWnZr4u7wl+WPt+OAgea1meaUv+mSieWQjuWPsA==
+  #分钟
+  expiration: 72000
+  header: Authorization
+
+
+#wechat:
+#  appid: "wx0b43a732b15109bf"
+#  secret: "42735ea1f4a9b60ac10e12daa4e651a3"
+
+
